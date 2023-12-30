@@ -10,8 +10,8 @@ const Confirm = () => {
     const router = useRouter()
     const { pickup, dropoff } = router.query
 
-    const [ pickUpCoordinates, setPickupCoordinates ] = useState();
-    const [ dropoffCoordinates, setDropoffCoordinates] = useState();
+    const [ pickUpCoordinates, setPickupCoordinates ] = useState([0,0]);
+    const [ dropoffCoordinates, setDropoffCoordinates] = useState([0,0]);
 
     const getPickUpCoordinates = () => {
         const pickUp = "Santa Monica";
